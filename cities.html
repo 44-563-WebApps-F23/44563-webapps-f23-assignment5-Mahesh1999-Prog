@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Favorite Cities by Letters</title>
+  <h3>Visit cities with Mahesh</h3>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">T</div>
+            <div class="col-sm-2">I</div>
+            <div class="col-sm-2">R</div>
+            <div class="col-sm-2">U</div>
+            <div class="col-sm-2">M</div>
+            <div class="col-sm-2">A</div>
+        </div>
+        <div class="row">
+            <div class="col-md">Tokyo</div>
+            <div class="col-md">Istanbul</div>
+            <div class="col-md">Rome</div>
+            <div class="col-md">Utrecht</div>
+            <div class="col-md">Mumbai</div>
+            <div class="col-md">Athens</div>
+        </div>
+    </div>
+    <h5>Explanation:</h4>
+    <ul>
+        <li>City names are breaken first</li>
+        <li>The row containing the letters ("S," "M," "I," "T," "H," "S") uses the Bootstrap grid system with the class "col-sm-2," which specifies that each column should take up 2 grid columns on small screens and larger. This means that these letters can scale down and adjust to smaller screen sizes before breaking into a new row.</li>
+        <li>On the other hand, the row containing the city names ("Sydney," "Madrid," "Istanbul," "Tokyo," "Helsinki," "San Francisco") uses the class "col-md," which specifies that each column should take up the full available width on medium-sized screens and larger. This makes the city names less flexible in adjusting to smaller screen sizes, causing them to break into a new row earlier than the letters.</li>
+        <li>Hence, It's important to note that the behavior observed is due to the specific Bootstrap classes applied to the columns. The choice of "col-sm-2" for the letters and "col-md" for the city names determines when they wrap to a new row based on screen size breakpoints.</li>
+    </ul>
+</body>
+</html>
