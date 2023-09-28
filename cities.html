@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <title>My Favorite Cities by Letters</title>
-  <h3>Visit cities with Mahesh</h3>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
@@ -14,6 +21,32 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="cities.html">6Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+
+            <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link active" href="advanced.html">Advanced</a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+  </nav>
+
+  <h3>Visit cities with Mahesh</h3>
     <div class="container">
         <div class="row">
             <div class="col-sm-2">T</div>
@@ -24,14 +57,74 @@
             <div class="col-sm-2">A</div>
         </div>
         <div class="row">
-            <div class="col-md">Tokyo</div>
-            <div class="col-md">Istanbul</div>
-            <div class="col-md">Rome</div>
-            <div class="col-md">Utrecht</div>
-            <div class="col-md">Mumbai</div>
-            <div class="col-md">Athens</div>
+            <div class="col-sm-2">Tokyo</div>
+            <div class="col-sm-2">Istanbul</div>
+            <div class="col-sm-2">Rome</div>
+            <div class="col-sm-2">Utrecht</div>
+            <div class="col-sm-2">Mumbai</div>
+            <div class="col-sm-2">Athens</div>
         </div>
-    </div>
+        <div class="container">
+
+          <div class="row">
+    
+            <div class="col-sm-4">
+    
+              <img src="Tokyo-skyline.jpg" class="img-fluid" width="400" alt="City1">
+    
+            </div>
+    
+            <div class="col-sm-4">
+    
+              <img src="Istanbul.jpg" class="img-fluid " width="400" alt="City2">
+    
+            </div>
+    
+            <div class="col-sm-4">
+    
+              <img src="UltimateRome_Hero_shutterstock.jpg" class="img-fluid" width="400" alt="City3">
+    
+     
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+     
+    
+     
+    
+        <div class="container">
+    
+          <div class="row">
+    
+            <div class="col-sm-4">
+    
+              <img src="Utrecht.jpg" class="img-thumbnail " width="200"  alt="Forest">
+    
+            </div>
+    
+            <div class="col-sm-4">
+    
+              <img src="Mumbai1.webp" class="img-thumbnail" width="200" alt="Forest">
+    
+            </div>
+    
+            <div class="col-sm-4">
+    
+              <img src="Athens.jpg" class="img-thumbnail" width="200" alt="Forest">
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    <br>
     <h5>Explanation:</h4>
     <ul>
         <li>City names are breaken first</li>
@@ -39,5 +132,169 @@
         <li>On the other hand, the row containing the city names ("Sydney," "Madrid," "Istanbul," "Tokyo," "Helsinki," "San Francisco") uses the class "col-md," which specifies that each column should take up the full available width on medium-sized screens and larger. This makes the city names less flexible in adjusting to smaller screen sizes, causing them to break into a new row earlier than the letters.</li>
         <li>Hence, It's important to note that the behavior observed is due to the specific Bootstrap classes applied to the columns. The choice of "col-sm-2" for the letters and "col-md" for the city names determines when they wrap to a new row based on screen size breakpoints.</li>
     </ul>
+    <div class="container">
+      <h3>BootStrap Table Example</h3>
+      <caption>City, River, and Tree Table</caption>
+      <table class="table table-bordered border-primary table-striped table-hover">
+          <thead class="thead-dark">
+              <tr class="table-primary">
+                  <th scope="col">Letter</th>
+                  <th scope="col">City</th>
+                  <th scope="col">River</th>
+                  <th scope="col">Tree</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="table-success">
+                  <th scope="row">M</th>
+                  <td>Mangalagiri</td>
+                  <td>Mississippi</td>
+                  <td>Maple</td>
+              </tr>
+              <tr class="table-danger">
+                  <th scope="row">A</th>
+                  <td>Angalkudhuru</td>
+                  <td>Amazon</td>
+                  <td>Abelia</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">H</th>
+                <td>Halfpet</td>
+                <td>Han</td>
+                <td>Harebells</td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">E</th>
+              <td>Ethanagar</td>
+              <td>Essequibo</td>
+              <td>Echeveria</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">S</th>
+            <td>Sulthanabad</td>
+            <td>Seine</td>
+            <td>Sequoia</td>
+        </tr>
+        <tr>
+          <th scope="row">T</th>
+          <td>Tenali</td>
+          <td>Tajo/Tejo</td>
+          <td>Tamarack</td>
+      </tr>
+          </tbody>
+      </table>
+      <button type="button" class="btn">T</button>
+
+  <button type="button" class="btn">I</button>
+
+  <button type="button" class="btn">R</button>
+
+  <button type="button" class="btn">U</button>
+
+  <button type="button" class="btn">M</button>
+
+  <button type="button" class="btn">A</button>
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Button groups">
+
+      <div class="btn-group" role="group" aria-label="Letters with images">
+
+        <button type="button" class="btn btn-success">T</button>
+
+        <button type="button" class="btn btn-success">I</button>
+
+        <button type="button" class="btn btn-success">R</button>
+  </div>
+  <div class="btn-group" role="group" arial-label="Alert buttons">
+
+    <button type="button" class="btn btn-warning">R</button>
+
+    <button type="button" class="btn btn-warning">P</button>
+  </div>
+  <div class="btn-group" role="group" arial-label="Remaining letters">
+    <button type="button" class="btn btn-danger">N</button>
+  </div>
+</div>
+<div class="dropdown">
+
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+
+    aria-expanded="false">
+
+    Dropdown button
+
+  </button>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenubutton1">
+
+    <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+
+    <li><a class="dropdown-item" href="advanced.html">advanced</a></li>
+
+  </ul>
+
+</div>
+
+<br>
+
+<br>
+
+<br>  
+
+<br>
+
+
+
+<form>
+
+  <div class="form-group">
+    <label for="InputEmailAddress" class="form-label">Email address</label>
+
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+   
+  </div>
+
+  <div class="form-group">
+<label for="city" class="form-label">City</label>
+<input type="text" class="form-control" placeholder="Enter your city" id="city">
+</div>
+
+</div>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+  <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+<div class="card" style="width: 18rem;">
+  <img src="Tokyo-skyline.jpg" class="card-img-top" alt="Tokyo">
+  <div class="card-body">
+    <h5 class="Tokyo">Tokyo</h5>
+    <p class="card-text">Tokyo is the capital and the most populous prefecture of Japan.[8] Tokyo's metropolitan area (including neighboring prefectures as well as Tochigi, Gunma and Ibaraki; 13,452 square kilometers or 5,194 square miles) is the most populous in the world</p>
+    <a href="https://en.wikipedia.org/wiki/Tokyo" class="btn btn-primary">Wikilink</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="Istanbul.jpg" class="card-img-top" alt="Istanbul">
+  <div class="card-body">
+    <h5 class="Istanbul">Istanbul</h5>
+    <p class="card-text">Istanbul is the largest city in Turkey, serving as the country's economic, cultural and historic hub. The city straddles the Bosporus strait, lying in both Europe and Asia</p>
+    <a href="https://en.wikipedia.org/wiki/Istanbul" class="btn btn-primary">Wikilink</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="UltimateRome_Hero_shutterstock.jpg" class="card-img-top" alt="Rome">
+  <div class="card-body">
+    <h5 class="Rome">Rome</h5>
+    <p class="card-text">Rome is capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale</p>
+    <a href="#" class="btn btn-primary">Wikilink</a>
+  </div>
+</div>
+  
 </body>
 </html>
